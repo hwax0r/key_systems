@@ -63,6 +63,8 @@ class ellipse(geometric_figures):
 
 class circle(geometric_figures):
     def square(self):
+        return pi * (self.a/2)**2
+    def perimeter(self):
         return pi * self.a
     
     def info(self):

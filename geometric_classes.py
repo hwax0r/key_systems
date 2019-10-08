@@ -26,16 +26,16 @@ class volumetric(geometric_figures):
 class flat(geometric_figures):
     
     def sqare(self):
-        if b == None:
-            return a**2
+        if self.b == None:
+            return self.a**2
         else:
-            return a * b
+            return self.a * self.b
         
     def perimeter(self):
-        if b == None:
-            return a*2
+        if self.b == None:
+            return self.a*2
         else:
-            return a + b
+            return self.a + self.b
         
     def info(self):
         return __class__.__name__
@@ -53,10 +53,10 @@ class non_vertex(geometric_figures):
 class ellipse(geometric_figures):
     
     def perimeter(self):
-        return pi * sqrt(3/2*(a+b) - sqrt(a*b))
+        return pi * sqrt(3/2*(self.a+self.b) - sqrt(self.a * self.b))
     
     def sqare(self):
-        return pi * a * b
+        return pi * self.a * self.b
     
     def info(self):
         return __class__.__name__

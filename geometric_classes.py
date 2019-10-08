@@ -25,7 +25,7 @@ class volumetric(geometric_figures):
 
 class flat(geometric_figures):
     
-    def sqare(self):
+    def square(self):
         if self.b == None:
             return self.a**2
         else:
@@ -55,13 +55,14 @@ class ellipse(geometric_figures):
     def perimeter(self):
         return pi * sqrt(3/2*(self.a+self.b) - sqrt(self.a * self.b))
     
-    def sqare(self):
+    def square(self):
         return pi * self.a * self.b
     
     def info(self):
         return __class__.__name__
 
 class circle(geometric_figures):
+    def square
     
     def info(self):
         return __class__.__name__

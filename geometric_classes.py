@@ -10,6 +10,12 @@ class geometric_figures():
     def info(self):
         return __class__.__name__
     
+    def square(self):
+        return 'there is no formula of square for this object'
+    
+    def perimeter(self):
+        return 'there is no formula of perimeter for this object'
+    
 class volumetric(geometric_figures):
     
     def volume(self):
@@ -19,6 +25,12 @@ class volumetric(geometric_figures):
             return 'Error' 
         else:
             return self.a * self.b * self.c
+        
+    def square(self):
+        return 'there is no formula of square for this object'
+    
+    def perimeter(self):
+        return 'there is no formula of perimeter for this object'
         
     def info(self):
         return __class__.__name__
@@ -40,17 +52,17 @@ class flat(geometric_figures):
     def info(self):
         return __class__.__name__
         
-class vertex(geometric_figures):
+class vertex(flat):
     
     def info(self):
         return __class__.__name__
 
-class non_vertex(geometric_figures):
+class non_vertex(flat):
     
     def info(self):
         return __class__.__name__
 
-class ellipse(geometric_figures):
+class ellipse(non_vertex):
     
     def perimeter(self):
         return pi * sqrt(3/2*(self.a+self.b) - sqrt(self.a * self.b))
@@ -61,9 +73,11 @@ class ellipse(geometric_figures):
     def info(self):
         return __class__.__name__
 
-class circle(geometric_figures):
+class circle(non_vertex):
+    
     def square(self):
         return pi * (self.a/2)**2
+    
     def perimeter(self):
         return pi * self.a
     
@@ -72,3 +86,5 @@ class circle(geometric_figures):
 
 new = volumetric(12,2,3)
 print(new.info())
+neew = geometric_figures(12)
+print(neew.square())

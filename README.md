@@ -54,5 +54,5 @@ there's nothing interesting in here // /\ \\\
 ######
 
 # 15 october 2019:
-- Задача 1. ()
+- Задача 1. ([django](django/))
       Создать проект django.

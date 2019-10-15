@@ -15,6 +15,14 @@ class geometric_figures():
     
     def perimeter(self):
         return 'there is no formula of perimeter for this object'
+    def volume(self):
+        return 'there is no formula of volume for this object'
+
+    def all_info(self):
+        print(f'square = {self.square()}')
+        print(f'perimeter = {self.perimeter()}')
+        print(f'volume = {self.volume()}')
+        print('______________________________________________________________')
     
 class volumetric(geometric_figures):
     
@@ -26,14 +34,6 @@ class volumetric(geometric_figures):
         else:
             return self.a * self.b * self.c
         
-    def square(self):
-        return 'there is no formula of square for this object'
-    
-    def perimeter(self):
-        return 'there is no formula of perimeter for this object'
-        
-    def info(self):
-        return __class__.__name__
 
 class flat(geometric_figures):
     
@@ -85,6 +85,7 @@ class circle(non_vertex):
         return __class__.__name__
 
 new = volumetric(12,2,3)
-print(new.info())
+#print(new.info())
 neew = geometric_figures(12)
-print(neew.square())
+#print(neew.square())
+new.all_info()

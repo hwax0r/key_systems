@@ -49,3 +49,4 @@ there's nothing interesting in here // /\ \\\
 
 - Задача 1.
       Реализовать паттерн "Стратегия".
+

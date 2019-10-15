@@ -50,3 +50,9 @@ there's nothing interesting in here // /\ \\\
 - Задача 1. ([strategy.py](strategy.py))
       Реализовать паттерн "Стратегия".
 
+
+######
+
+# 15 october 2019:
+- Задача 1. ()
+      Создать проект django.
